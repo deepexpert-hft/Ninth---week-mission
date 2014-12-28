@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+  <title>成果与资源</title>
+<link rel="stylesheet" href="/static/css/resource.css" type="text/css" >
+</head>
+<body>
+<div class="container">
+      <div class="header">
+        <div id="user">
+        {%if username%}
+        你好,{{username}}<a href="/logout">[注销]</a>
+        {%else%}
+        你好,游客<a href="/">[请登录]</a>
+        {%endif%}
+      </div>
+        <ul>
+          <li><a href ="/resource/">成果与资源</a></li>
+          <li><a href ="/activity/">课题组活动</a></li>
+          <li><a href ="/main/">课题组成员介绍</a></li>
+          <li><a href ="/teacher/about/">老师介绍</a></li>
+        </ul>
+      </div>
+    <div class="left">
+      <div id="title">
+        机器学习资源
+      </div>
+      <li><a href="http://blog.jobbole.com/56256/"><<机器学习的最佳入门学习资源>></a></li>
+      <li><a href="http://www.csdn.net/article/2014-12-27/2823330"><<研究机器学习之MLlib实践经验>></a><li>
+        <li><a href="http://blog.csdn.net/suipingsp/article/details/42101139"><< 机器学习经典算法详解及Python实现--线性回归（Linear Regression）算法>></a><li>
+          <li><a href="http://blog.csdn.net/braveheart89/article/details/8142383"><<机器学习十大算法>></a></li>
+          <li><a href="http://blog.csdn.net/pongba/article/details/2915005"><<机器学习与人工智能学习资源导引>></a></li>
+    </div>
+    <div class="right">
+      <div id="title">
+        我们的成果</div>
+      </div>
+</div>
+</body>
+</html>

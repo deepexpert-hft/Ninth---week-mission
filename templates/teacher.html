@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+  <title>老师介绍</title>
+<link rel="stylesheet" href="/static/css/teacher.css" type="text/css" >
+</head>
+<body>
+<div class="container">
+      <div class="header">
+        <div id="user">
+        {%if username%}
+        你好,{{username}}<a href="/logout">[注销]</a>
+        {%else%}
+        你好,游客<a href="/">[请登录]</a>
+        {%endif%}
+      </div>
+        <ul>
+          <li><a href ="/resource/">成果与资源</a></li>
+          <li><a href ="/activity/">课题组活动</a></li>
+          <li><a href ="/main/">课题组成员介绍</a></li>
+          <li><a href ="/teacher/about/">老师介绍</a></li>
+        </ul>
+      </div>
+    <div class="teacher">
+      <div id="title">
+        简介
+      </div>
+      <div id="about">
+        <img src="/static/img/teacher.jpg" alt="picture" height="260px" width="230px" title=""/>
+        <b>严建峰</b><br>
+        Yan Jian-Feng<br>
+          博士、副教授<br>
+          苏州大学计算机科学与技术学院<br>
+<b>Office</b>  sds414d1s11sd<br>
+<b>Phone </b> 18888886666<br>
+<b>Email </b> 123345@hsh.com<br>
+<b>Address</b> sssd2d12d2d2d1d12<br>
+</div>
+</div>
+    <div class="list">
+      <div id="title">
+        专利列表</div>
+      </div>
+      <div class="list">
+      <div id="title">
+        项目列表</div>
+      </div>
+      <div class="list">
+      <div id="title">
+        论文列表</div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

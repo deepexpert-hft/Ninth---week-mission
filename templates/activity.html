@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+<title>课题组活动</title>
+<link rel="stylesheet" href="/static/css/activity.css" type="text/css" >
+</head>
+<body>
+<div class="container">
+      <div class="header">
+        <div id="user">
+        {%if username%}
+        你好,{{username}}<a href="/logout">[注销]</a>
+        {%else%}
+        你好,游客<a href="/">[请登录]</a>
+        {%endif%}
+      </div>
+        <ul>
+          <li><a href ="/resource/">成果与资源</a></li>
+          <li><a href ="/activity/">课题组活动</a></li>
+          <li><a href ="/main/">课题组成员介绍</a></li>
+          <li><a href ="/teacher/about/">老师介绍</a></li>
+        </ul>
+      </div>
+      <div class="tbody">
+
+        </div>
+</div>
+</body>
+</html>
