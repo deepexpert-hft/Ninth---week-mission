@@ -1,0 +1,26 @@
+﻿<html><head>
+{%block head%}
+{%endblock%}
+</head>
+<body>
+<div class="container"> 
+  <div class="header">
+      <div id="user">
+      <div id="language"><a href="/main/">【CHINESE】</a></div>
+      {%if username%}
+      hello,{{username}}<a href="/logout/">[logout]</a>
+      {%else%}
+      hello,Stranger<a href="/">[login]</a>
+      {%endif%}
+    </div>
+      <ul>
+        <li><a href ="/Eresource/")>Resource</a></li>
+        <li><a href ="/Eactivity/">Activity</a></li>
+        <li><a href ="/Emain/">Member</a></li>
+        <li><a href ="/Eteacher/about/">Teacher</a></li>
+      </ul>
+  </div>
+{% block body %}{%endblock%}
+</body>
+</div>
+</html>
